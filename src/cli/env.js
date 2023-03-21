@@ -1,11 +1,11 @@
-import { env } from "process";
+import { env } from 'process'
 
 const parseEnv = () => {
-  for (let val in env) {
-    if (val.startsWith("MITSO_")) {
-      console.log(val + "=" + env[val]);
+    for (let val in env) {
+        if (val.startsWith('MITSO_')) {
+            console.log(val + '=' + env[val])
+        }
     }
-  }
-};
+}
 
-parseEnv();
+parseEnv()
